@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HadafResan\\Targeted\\Targeted\\Targeted.csproj": {}
+    "D:\\HadafResan\\Targeted\\Targeted.csproj": {}
   },
   "projects": {
-    "D:\\HadafResan\\Targeted\\Targeted\\Targeted.csproj": {
+    "D:\\HadafResan\\Targeted\\Targeted.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HadafResan\\Targeted\\Targeted\\Targeted.csproj",
+        "projectUniqueName": "D:\\HadafResan\\Targeted\\Targeted.csproj",
         "projectName": "Targeted",
-        "projectPath": "D:\\HadafResan\\Targeted\\Targeted\\Targeted.csproj",
+        "projectPath": "D:\\HadafResan\\Targeted\\Targeted.csproj",
         "packagesPath": "C:\\Users\\jafar\\.nuget\\packages\\",
-        "outputPath": "D:\\HadafResan\\Targeted\\Targeted\\obj\\",
+        "outputPath": "D:\\HadafResan\\Targeted\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jafar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,6 +59,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             }
           },
           "imports": [
