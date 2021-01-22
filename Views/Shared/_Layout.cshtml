@@ -10,16 +10,15 @@
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
     <title>هدف</title>
+
+    @await RenderSectionAsync("CssFirst", required: false)
+
     @*<link rel="apple-touch-icon" href="~/app-assets/images/ico/apple-icon-120.png">*@
     <link rel="shortcut icon" type="image/x-icon" href="~/app-assets/images/ico/favicon.ico">
     <link href="~/app-assets/images/fonts.googleapis.css" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/vendors-rtl.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/extensions/tether-theme-arrows.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/extensions/tether.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/extensions/shepherd-theme-default.css">
+    @await RenderSectionAsync("CssVendor", required: false)
     <!-- END: Vendor CSS-->
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/bootstrap.min.css">
@@ -28,18 +27,16 @@
     <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/components.min.css">
     <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/themes/dark-layout.min.css">
     <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/themes/semi-dark-layout.min.css">
-
+    <!-- END: Theme CSS-->
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/core/menu/menu-types/vertical-menu.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/core/colors/palette-gradient.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/pages/dashboard-analytics.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/pages/card-analytics.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/plugins/tour/tour.min.css">
+    @await RenderSectionAsync("CssPage", required: false)
     <!-- END: Page CSS-->
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/custom-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="~/assets/css/style-rtl.css">
     <!-- END: Custom CSS-->
+
+    @await RenderSectionAsync("CssEnd", required: false)
 
 </head>
 <!-- END: Head-->
@@ -956,13 +953,14 @@
         </p>
     </footer>
     <!-- END: Footer-->
+
+    @await RenderSectionAsync("JsFirst", required: false)
+
     <!-- BEGIN: Vendor JS-->
     <script src="~/app-assets/vendors/js/vendors.min.js"></script>
-    <!-- BEGIN Vendor JS-->
+    <!-- END Vendor JS-->
     <!-- BEGIN: Page Vendor JS-->
-    <script src="~/app-assets/vendors/js/charts/apexcharts.min.js"></script>
-    <script src="~/app-assets/vendors/js/extensions/tether.min.js"></script>
-    <script src="~/app-assets/vendors/js/extensions/shepherd.min.js"></script>
+    @await RenderSectionAsync("JsPage", required: false)
     <!-- END: Page Vendor JS-->
     <!-- BEGIN: Theme JS-->
     <script src="~/app-assets/js/core/app-menu.min.js"></script>
@@ -972,9 +970,9 @@
     <script src="~/app-assets/js/scripts/footer.min.js"></script>
     <!-- END: Theme JS-->
     <!-- BEGIN: Page JS-->
-    <script src="~/app-assets/js/scripts/pages/dashboard-analytics.min.js"></script>
+    @await RenderSectionAsync("JsVendor", required: false)
     <!-- END: Page JS-->
-    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("JsEnd", required: false)
 </body>
 <!-- END: Body-->
 </html>

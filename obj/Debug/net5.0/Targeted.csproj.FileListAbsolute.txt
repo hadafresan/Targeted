@@ -142,7 +142,6 @@ D:\HadafResan\Targeted\obj\Debug\net5.0\Targeted.TagHelpers.output.cache
 D:\HadafResan\Targeted\obj\Debug\net5.0\Targeted.RazorCoreGenerate.cache
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -196,3 +195,4 @@ D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_View
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
