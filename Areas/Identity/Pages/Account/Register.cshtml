@@ -1,8 +1,8 @@
 ﻿@page
 @model RegisterModel
 @*@{
-    ViewData["Title"] = "Register";
-}*@
+        ViewData["Title"] = "Register";
+    }*@
 @{
     Layout = null;
 }
@@ -10,64 +10,64 @@
 <h1>@ViewData["Title"]</h1>
 
 @*<div class="row">
-    <div class="col-md-4">
-        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h4>Create a new account.</h4>
-            <hr />
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Input.Email"></label>
-                <input asp-for="Input.Email" class="form-control" />
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.Password"></label>
-                <input asp-for="Input.Password" class="form-control" />
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.ConfirmPassword"></label>
-                <input asp-for="Input.ConfirmPassword" class="form-control" />
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-primary">Register</button>
-        </form>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h4>Use another service to register.</h4>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
-                            for details on setting up this ASP.NET application to support logging in via external services.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+        <div class="col-md-4">
+            <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <h4>Create a new account.</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Input.Email"></label>
+                    <input asp-for="Input.Email" class="form-control" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.Password"></label>
+                    <input asp-for="Input.Password" class="form-control" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.ConfirmPassword"></label>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+        <div class="col-md-6 col-md-offset-2">
+            <section>
+                <h4>Use another service to register.</h4>
+                <hr />
+                @{
+                    if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                    {
                         <div>
                             <p>
-                                @foreach (var provider in Model.ExternalLogins)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
+                                There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
+                                for details on setting up this ASP.NET application to support logging in via external services.
                             </p>
                         </div>
-                    </form>
+                    }
+                    else
+                    {
+                        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                            <div>
+                                <p>
+                                    @foreach (var provider in Model.ExternalLogins)
+                                    {
+                                        <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                    }
+                                </p>
+                            </div>
+                        </form>
+                    }
                 }
-            }
-        </section>
+            </section>
+        </div>
     </div>
-</div>
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}*@
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }*@
 <!DOCTYPE html>
 
 <html class="loading" lang="en" data-textdirection="ltr">
@@ -76,39 +76,39 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Register Page </title>
+    <title>ثبت نام  </title>
     @*<link rel="apple-touch-icon" href="~/app-assets/images/ico/apple-icon-120.png">*@
     <link rel="shortcut icon" type="image/x-icon" href="~/app-assets/images/ico/favicon.ico">
     <link href="~/app-assets/images/fonts.googleapis.css" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/vendors-rtl.min.css">
     <!-- END: Vendor CSS-->
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css/bootstrap-extended.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css/colors.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css/components.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css/themes/dark-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css/themes/semi-dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/components.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/themes/semi-dark-layout.min.css">
 
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css/core/menu/menu-types/vertical-menu.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css/core/colors/palette-gradient.min.css">
-    <link rel="stylesheet" type="text/css" href="~/app-assets/css/pages/authentication.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/core/colors/palette-gradient.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/pages/authentication.css">
     <!-- END: Page CSS-->
     <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/custom-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="~/assets/css/style-rtl.css">
     <!-- END: Custom CSS-->
 
 </head>
 <!-- END: Head-->
 <!-- BEGIN: Body-->
-<body class="vertical-layout vertical-menu-modern 1-column  navbar-floating footer-static bg-full-screen-image  blank-page blank-page"
-      data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
+<body class="vertical-layout vertical-menu-modern 1-column  navbar-floating footer-static bg-full-screen-image  menu-collapsed blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
@@ -128,46 +128,37 @@
                                     <div class="card rounded-0 mb-0 p-2">
                                         <div class="card-header pt-50 pb-1">
                                             <div class="card-title">
-                                                <h4 class="mb-0">Create Account</h4>
+                                                <h4 class="mb-0">ایجاد حساب کاربری</h4>
                                             </div>
                                         </div>
-                                        <p class="px-2">Fill the below form to create a new account.</p>
+                                        <p class="px-2">برای ایجاد یک حساب کاربری فرم زیر را پر کنید.</p>
                                         <div class="card-content">
                                             <div class="card-body pt-0">
                                                 <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                                                    <div class="form-label-group">
+                                                        <input type="text" id="inputUserName" class="form-control" placeholder=" نام کاربری" required>
+                                                        <label for="inputName">نام کاربری</label>
+                                                    </div>
                                                     <div asp-validation-summary="All" class="text-danger"></div>
                                                     <div class="form-label-group">
                                                         @*<label asp-for="Input.Email"></label>*@
-                                                        <input asp-for="Input.Email" id="inputEmail" class="form-control" placeholder="Email" required />
+                                                        <input asp-for="Input.Email" id="inputEmail" class="form-control" placeholder="ایمیل" required />
+                                                        <label for="inputEmail">ایمیل</label>
                                                         <span asp-validation-for="Input.Email" class="text-danger"></span>
                                                     </div>
                                                     <div class="form-label-group">
                                                         @*<label asp-for="Input.Password"></label>*@
-                                                        <input asp-for="Input.Password" id="inputPassword" class="form-control" placeholder="Password" required />
+                                                        <input asp-for="Input.Password" id="inputPassword" class="form-control" placeholder="کلمه عبور" required />
+                                                        <label for="inputPassword">کلمه عبور</label>
                                                         <span asp-validation-for="Input.Password" class="text-danger"></span>
                                                     </div>
                                                     <div class="form-label-group">
                                                         @*<label asp-for="Input.ConfirmPassword"></label>*@
-                                                        <input asp-for="Input.ConfirmPassword" id="inputConfPassword" class="form-control" placeholder="Confirm Password" required />
+                                                        <input asp-for="Input.ConfirmPassword" id="inputConfPassword" class="form-control" placeholder="رمز عبور را تأیید کنید" required />
+                                                        <label for="inputConfPassword">رمز عبور را تأیید کنید</label>
                                                         <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                                                     </div>
-                                                    @*<div class="form-label-group">
-                <input type="text" id="inputName" class="form-control" placeholder="Name" required>
-                <label for="inputName">Name</label>
 
-            </div>
-            <div class="form-label-group">
-                <input type="email" id="inputEmail2" class="form-control" placeholder="Email" required>
-                <label for="inputEmail">Email</label>
-            </div>
-            <div class="form-label-group">
-                <input type="password" id="inputPassword2" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
-            </div>
-            <div class="form-label-group">
-                <input type="password" id="inputConfPassword2" class="form-control" placeholder="Confirm Password" required>
-                <label for="inputConfPassword">Confirm Password</label>
-            </div>*@
                                                     <div class="form-group row">
                                                         <div class="col-12">
                                                             <fieldset class="checkbox">
@@ -178,13 +169,13 @@
                                                                             <i class="vs-icon feather icon-check"></i>
                                                                         </span>
                                                                     </span>
-                                                                    <span class=""> I accept the terms & conditions.</span>
+                                                                    <span class=""> شرایط و ضوابط را می پذیرم.</span>
                                                                 </div>
                                                             </fieldset>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="btn btn-outline-primary float-left btn-inline mb-50">Login</a>
-                                                    <button type="submit" class="btn btn-primary float-right btn-inline mb-50">Register</button>
+                                                    <a href="#" class="btn btn-outline-primary float-left btn-inline mb-50">ورود</a>
+                                                    <button type="submit" class="btn btn-primary float-right btn-inline mb-50">ثبت نام</button>
                                                     @*<button type="submit" class="btn btn-primary">Register</button>*@
                                                 </form>
                                             </div>
