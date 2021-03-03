@@ -196,3 +196,4 @@ D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Error.cshtml.
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Home\Target.cshtml.g.cs

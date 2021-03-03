@@ -960,7 +960,7 @@
     <script src="~/app-assets/vendors/js/vendors.min.js"></script>
     <!-- END Vendor JS-->
     <!-- BEGIN: Page Vendor JS-->
-    @await RenderSectionAsync("JsPage", required: false)
+    @await RenderSectionAsync("JsVendor", required: false)
     <!-- END: Page Vendor JS-->
     <!-- BEGIN: Theme JS-->
     <script src="~/app-assets/js/core/app-menu.min.js"></script>
@@ -970,7 +970,7 @@
     <script src="~/app-assets/js/scripts/footer.min.js"></script>
     <!-- END: Theme JS-->
     <!-- BEGIN: Page JS-->
-    @await RenderSectionAsync("JsVendor", required: false)
+    @await RenderSectionAsync("JsPage", required: false)
     <!-- END: Page JS-->
     @await RenderSectionAsync("JsEnd", required: false)
 

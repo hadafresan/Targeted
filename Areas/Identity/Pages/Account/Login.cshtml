@@ -8,80 +8,247 @@
     Layout = null;
 }
 <h1>@ViewData["Title"]</h1>
-<div class="row">
-    <div class="col-md-4">
-        <section>
-            <form id="account" method="post">
-                <h4>Use a local account to log in.</h4>
-                <hr />
-                <div asp-validation-summary="All" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="Input.Email"></label>
-                    <input asp-for="Input.Email" class="form-control" />
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Input.Password"></label>
-                    <input asp-for="Input.Password" class="form-control" />
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <div class="checkbox">
-                        <label asp-for="Input.RememberMe">
-                            <input asp-for="Input.RememberMe" />
-                            @Html.DisplayNameFor(m => m.Input.RememberMe)
-                        </label>
+
+<!DOCTYPE html>
+
+<html class="loading" lang="en" data-textdirection="rtl">
+<!-- BEGIN: Head-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Login">
+    <meta name="keywords" content="Login">
+    <meta name="author" content="PIXINVENT">
+    <title>صفحه ورود </title>
+    @*<link rel="apple-touch-icon" href="~/app-assets/images/ico/apple-icon-120.png">*@
+    <link rel="shortcut icon" type="image/x-icon" href="~/app-assets/images/ico/favicon.ico">
+    <link href="~/app-assets/images/fonts.googleapis.css" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/vendors-rtl.min.css">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/components.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/themes/semi-dark-layout.min.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/core/colors/palette-gradient.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/pages/authentication.css">
+    <!-- END: Page CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/custom-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style-rtl.css">
+    <!-- END: Custom CSS-->
+    <style>
+        .form-control-position {
+            top: 5px;
+        }
+    </style>
+</head>
+<!-- END: Head-->
+<!-- BEGIN: Body-->
+<body class="vertical-layout vertical-menu-modern 1-column  navbar-floating footer-static bg-full-screen-image  blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <section class="row flexbox-container">
+                    <div class="col-xl-8 col-11 d-flex justify-content-center">
+                        <div class="card bg-authentication rounded-0 mb-0">
+                            <div class="row m-0">
+                                <div class="col-lg-6 d-lg-block d-none text-center align-self-center px-1 py-0">
+                                    <img src="~/app-assets/images/pages/login.png" alt="branding logo">
+                                </div>
+                                <div class="col-lg-6 col-12 p-0">
+                                    <div class="card rounded-0 mb-0 px-2">
+                                        <div class="card-header pb-1">
+                                            <div class="card-title">
+                                                <h4 class="mb-0">ورود</h4>
+                                            </div>
+                                        </div>
+                                        <p class="px-2">خوش آمدید ، لطفا به حساب کاربری خود وارد شوید</p>
+                                        <div class="card-content">
+                                            <div class="card-body pt-1">
+
+                                                <form id="account" method="post">
+                                                    <hr />
+                                                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                                                    <fieldset class="form-label-group form-group position-relative has-icon-left">
+                                                        <input asp-for="Input.Email" type="text" class="form-control" id="user-name" placeholder="نام کاربری" required>
+                                                        <div class="form-control-position">
+                                                            <i class="feather icon-user"></i>
+                                                        </div>
+                                                        <label asp-for="Input.Email" for="user-name">نام کاربری</label>
+                                                    </fieldset>
+                                                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+
+                                                    <fieldset class="form-label-group position-relative has-icon-left">
+                                                        <input asp-for="Input.Password" type="password" class="form-control" id="user-password" placeholder="کلمه عبور" required>
+                                                        <div class="form-control-position">
+                                                            <i class="feather icon-lock"></i>
+                                                        </div>
+                                                        <label asp-for="Input.Password" for="user-password">کلمه عبور</label>
+                                                    </fieldset>
+                                                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+
+                                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                                        <div class="text-left">
+                                                            <fieldset class="checkbox">
+                                                                <div class="vs-checkbox-con vs-checkbox-primary">
+                                                                    @*<label asp-for="Input.RememberMe">
+                                                                            <input asp-for="Input.RememberMe" type="checkbox">
+                                                                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                                                        </label>*@
+
+
+                                                                    <span class="vs-checkbox">
+                                                                        <span class="vs-checkbox--check">
+                                                                            <i class="vs-icon feather icon-check"></i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="">مرا به خاطر بسپار</span>
+                                                                </div>
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <p>
+                                                                <a id="forgot-password" asp-page="./ForgotPassword" class="card-link">رمز ورود را فراموش کرده اید؟</a>
+                                                            </p>
+                                                            @*<p>
+                                                                      <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                                                                </p>*@
+                                                        </div>
+                                                    </div>
+
+
+                                                    <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="btn btn-outline-primary float-left btn-inline">ثبت نام</a>
+                                                    <button type="submit" class="btn btn-primary float-right btn-inline">ورود</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="login-footer">
+                                            <div class="divider">
+                                                <div class="divider-text">یا</div>
+                                            </div>
+                                            <div class="footer-btn d-inline">
+                                                <a href="#" class="btn btn-facebook"><span class="fa fa-facebook"></span></a>
+                                                <a href="#" class="btn btn-twitter white"><span class="fa fa-twitter"></span></a>
+                                                <a href="#" class="btn btn-google"><span class="fa fa-google"></span></a>
+                                                <a href="#" class="btn btn-github"><span class="fa fa-github-alt"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Log in</button>
-                </div>
-                <div class="form-group">
-                    <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                    </p>
-                    <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
-                    </p>
-                </div>
-            </form>
-        </section>
+                </section>
+
+            </div>
+        </div>
     </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h4>Use another service to log in.</h4>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
+    <!-- END: Content-->
+    <!-- BEGIN: Vendor JS-->
+    <script src="~/app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Theme JS-->
+    <script src="~/app-assets/js/core/app-menu.min.js"></script>
+    <script src="~/app-assets/js/core/app.min.js"></script>
+    <script src="~/app-assets/js/scripts/components.min.js"></script>
+    <!-- END: Theme JS-->
+    <!-- BEGIN: Page JS-->
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+</html>
+
+@*<div class="row">
+        <div class="col-md-4">
+            <section>
+                <form id="account" method="post">
+                    <h4>Use a local account to log in.</h4>
+
+                    <div class="form-group">
+                        <label asp-for="Input.Email"></label>
+                        <input asp-for="Input.Email" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Password"></label>
+                        <input asp-for="Input.Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label asp-for="Input.RememberMe">
+                                <input asp-for="Input.RememberMe" />
+                                @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </div>
+                    <div class="form-group">
                         <p>
-                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
-                            for details on setting up this ASP.NET application to support logging in via external services.
+                            <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                        </p>
+                        <p>
+                            <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                        </p>
+                        <p>
+                            <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
                         </p>
                     </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                </form>
+            </section>
+        </div>
+        <div class="col-md-6 col-md-offset-2">
+            <section>
+                <h4>Use another service to log in.</h4>
+                <hr />
+                @{
+                    if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                    {
                         <div>
                             <p>
-                                @foreach (var provider in Model.ExternalLogins)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
+                                There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
+                                for details on setting up this ASP.NET application to support logging in via external services.
                             </p>
                         </div>
-                    </form>
+                    }
+                    else
+                    {
+                        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                            <div>
+                                <p>
+                                    @foreach (var provider in Model.ExternalLogins)
+                                    {
+                                        <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                    }
+                                </p>
+                            </div>
+                        </form>
+                    }
                 }
-            }
-        </section>
-    </div>
-</div>
+            </section>
+        </div>
+    </div>*@
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+@*@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }*@

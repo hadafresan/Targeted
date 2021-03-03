@@ -1,0 +1,974 @@
+﻿@section CssVendor {
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/extensions/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/ui/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/forms/select/select2.min.css">
+}
+@section CssPage {
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/core/colors/palette-gradient.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/pages/dashboard-analytics.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/pages/card-analytics.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css-rtl/plugins/tour/tour.min.css">
+}
+
+@*<body class="vertical-layout vertical-menu-modern content-detached-left-sidebar ecommerce-application navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="content-detached-left-sidebar">*@
+
+
+<div class="app-content content">
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-9 col-12 mb-2">
+                <div class="row breadcrumbs-top">
+                    <div class="col-12">
+                        <h2 class="content-header-title float-left mb-0">فروشگاه</h2>
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">خانه</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">تجارت الکترونیک</a>
+                                </li>
+                                <li class="breadcrumb-item active"> فروشگاه</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
+                <div class="form-group breadcrum-right">
+                    <div class="dropdown">
+                        <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-settings"></i></button>
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">گفتگو</a><a class="dropdown-item" href="#">ایمیل</a><a class="dropdown-item" href="#">تقویم</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-detached content-right">
+            <div class="content-body">
+                <!-- Ecommerce Content Section Starts -->
+                <section id="ecommerce-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="ecommerce-header-items">
+                                <div class="result-toggler">
+                                    <button class="navbar-toggler shop-sidebar-toggler" type="button" data-toggle="collapse">
+                                        <span class="navbar-toggler-icon d-block d-lg-none"><i class="feather icon-menu"></i></span>
+                                    </button>
+                                    <div class="search-results"> 16285 نتیجه یافت شد</div>
+                                </div>
+                                <div class="view-options">
+                                    <select class="price-options form-control" id="ecommerce-price-options">
+                                        <option selected>ویژه</option>
+                                        <option value="1">پایین ترین</option>
+                                        <option value="2">بالاترین</option>
+                                    </select>
+                                    <div class="view-btn-option">
+                                        <button class="btn btn-white view-btn grid-view-btn active">
+                                            <i class="feather icon-grid"></i>
+                                        </button>
+                                        <button class="btn btn-white list-view-btn view-btn">
+                                            <i class="feather icon-list"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Ecommerce Content Section Starts -->
+                <!-- background Overlay when sidebar is shown  starts-->
+                <div class="shop-content-overlay"></div>
+                <!-- background Overlay when sidebar is shown  ends-->
+                <!-- Ecommerce Search Bar Starts -->
+                <section id="ecommerce-searchbar">
+                    <div class="row mt-1">
+                        <div class="col-sm-12">
+                            <fieldset class="form-group position-relative">
+                                <input type="text" class="form-control search-product" id="iconLeft5" placeholder="اینجا جستجو کنید">
+                                <div class="form-control-position">
+                                    <i class="feather icon-search"></i>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </section>
+                <!-- Ecommerce Search Bar Ends -->
+                <!-- Ecommerce Products Starts -->
+                <section id="ecommerce-products" class="grid-view">
+                    <div class="card ecommerce-card">
+                        <div class="card-content">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid" src="~/app-assets/images/pages/eCommerce/1.png" alt="img-placeholder">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price"> 3,999,000 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="item-name">
+                                    <a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+                                    <p class="item-company">توسط<span class="company-name">Google</span></p>
+                                </div>
+                                <div>
+                                    <p class="item-description"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                </div>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 3,999,000 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa fa-heart-o"></i> <span>لیست علاقه مندی ها</span>
+                                </div>
+                                <div class="cart">
+                                    <i class="feather icon-shopping-cart"></i> <span class="add-to-cart">افزودن به سبد خرید</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">نمایش در سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ecommerce-card">
+                        <div class="card-content">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid" src="~/app-assets/images/pages/eCommerce/2.png" alt="img-placeholder">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="item-price"> 350,000 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="item-name">
+                                    <a href="app-ecommerce-details.html">Google - Chromecast - Black</a>
+                                    <p class="item-company">توسط<span class="company-name">آمازون</span></p>
+                                </div>
+                                <div>
+                                    <p class="item-description"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                </div>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 350,000 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa fa-heart-o mr-25"></i>  لسیت علاقه مندی ها
+                                </div>
+                                <div class="cart">
+                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">افزودن به سبد خرید</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">نمایش در سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ecommerce-card">
+                        <div class="card-content">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid"
+                                         src="~/app-assets/images/pages/eCommerce/3.png" alt="img-placeholder">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="item-cost">
+                                            <h6 class="item-price"> 499,990 ريال</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-name">
+                                    <a href="app-ecommerce-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
+                                    <p class="item-company">توسط<span class="company-name">Dell</span></p>
+                                </div>
+                                <div>
+                                    <p class="item-description"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                </div>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 499,990 ريال</h6>
+                                        <p class="shipping">
+                                            <i class="feather icon-shopping-cart"></i>  ارسال رایگان
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa fa-heart-o mr-25"></i>  لسیت علاقه مندی ها
+                                </div>
+                                <div class="cart">
+                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">افزودن به سبد خرید</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">نمایش در سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ecommerce-card">
+                        <div class="card-content">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid"
+                                         src="~/app-assets/images/pages/eCommerce/4.png" alt="img-placeholder">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 499,990 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="item-name">
+                                    <a href="app-ecommerce-details.html">Amazon - Echo Dot</a>
+                                    <p class="item-company">توسط<span class="company-name">آمازون</span></p>
+                                </div>
+                                <div>
+                                    <p class="item-description"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                </div>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 499,990 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa fa-heart-o mr-25"></i>  لسیت علاقه مندی ها
+                                </div>
+                                <div class="cart">
+                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">افزودن به سبد خرید</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">نمایش در سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ecommerce-card">
+                        <div class="card-content">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid" src="~/app-assets/images/pages/eCommerce/5.png" alt="img-placeholder">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 9,999,900 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="item-name">
+                                    <a href="app-ecommerce-details.html">
+                                        Apple - MacBook Airآ® (Latest Model) - 13.3" Display - Silver
+                                    </a>
+                                    <p class="item-company">توسط<span class="company-name">Apple</span></p>
+                                </div>
+                                <div>
+                                    <p class="item-description"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                </div>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 9,999,900 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa fa-heart-o mr-25"></i>  لسیت علاقه مندی ها
+                                </div>
+                                <div class="cart">
+                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">افزودن به سبد خرید</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">نمایش در سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ecommerce-card">
+                        <div class="card-content">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid" src="~/app-assets/images/pages/eCommerce/6.png" alt="img-placeholder">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 4,299,900 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="item-name">
+                                    <a href="app-ecommerce-details.html">
+                                        Sharp - 50" Class (49.5" Diag.) - LED - 1080p - Black
+                                    </a>
+                                    <p class="item-company">توسط<span class="company-name">Sharp</span></p>
+                                </div>
+                                <div>
+                                    <p class="item-description"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                </div>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 4,299,900 ريال</h6>
+                                        <p class="shipping">
+                                            <i class="feather icon-shopping-cart"></i>  ارسال رایگان
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa fa-heart-o mr-25"></i>  لسیت علاقه مندی ها
+                                </div>
+                                <div class="cart">
+                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">افزودن به سبد خرید</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">نمایش در سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ecommerce-card">
+                        <div class="card-content">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid" src="~/app-assets/images/pages/eCommerce/7.png" alt="img-placeholder">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 129,000 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="item-name">
+                                    <a href="app-ecommerce-details.html"> Google - Google Home - White/Slate fabric</a>
+                                    <p class="item-company">توسط<span class="company-name">Google</span></p>
+                                </div>
+                                <div>
+                                    <p class="item-description"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                </div>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 129,000 ريال</h6>
+                                        <p class="shipping">
+                                            <i class="feather icon-shopping-cart"></i>  ارسال رایگان
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa fa-heart-o mr-25"></i>  لسیت علاقه مندی ها
+                                </div>
+                                <div class="cart">
+                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">افزودن به سبد خرید</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">نمایش در سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ecommerce-card">
+                        <div class="card-content">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid" src="~/app-assets/images/pages/eCommerce/10.png" alt="img-placeholder">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 299,990 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="item-name">
+                                    <a href="app-ecommerce-details.html">
+                                        Apple - EarPodsâ„¢ with Remote and Mic - White
+                                    </a>
+                                    <p class="item-company">توسط<span class="company-name">Apple</span></p>
+                                </div>
+                                <div>
+                                    <p class="item-description"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                </div>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 299,990 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa fa-heart-o mr-25"></i>  لسیت علاقه مندی ها
+                                </div>
+                                <div class="cart">
+                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">افزودن به سبد خرید</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">نمایش در سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ecommerce-card">
+                        <div class="card-content">
+                            <div class="item-img text-center">
+                                <a href="app-ecommerce-details.html">
+                                    <img class="img-fluid" src="~/app-assets/images/pages/eCommerce/9.png" alt="img-placeholder">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 149,990 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="item-name">
+                                    <a href="app-ecommerce-details.html"> فیلیپس - رنگ آمیزی A19 هوشمند  لامپ هوشمند - فقط سفید</a>
+                                    <p class="item-company">توسط<span class="company-name">فیلیپس</span></p>
+                                </div>
+                                <div>
+                                    <p class="item-description"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                </div>
+                            </div>
+                            <div class="item-options text-center">
+                                <div class="item-wrapper">
+                                    <div class="item-rating">
+                                        <div class="badge badge-primary badge-md">
+                                            <span>4</span> <i class="feather icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-cost">
+                                        <h6 class="item-price"> 149,990 ريال</h6>
+                                    </div>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa fa-heart-o mr-25"></i>  لسیت علاقه مندی ها
+                                </div>
+                                <div class="cart">
+                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">افزودن به سبد خرید</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">نمایش در سبد خرید</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Ecommerce Products Ends -->
+                <!-- Ecommerce Pagination Starts -->
+                <section id="ecommerce-pagination">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center mt-2">
+                                    <li class="page-item prev-item"><a class="page-link" href="#"></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item" aria-current="page"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                    <li class="page-item next-item"><a class="page-link" href="#"></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+                <!-- Ecommerce Pagination Ends -->
+
+            </div>
+        </div>
+        <div class="sidebar-detached sidebar-left">
+            <div class="sidebar">
+                <!-- Ecommerce Sidebar Starts -->
+                <div class="sidebar-shop" id="ecommerce-sidebar-toggler">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h6 class="filter-heading d-none d-lg-block">فیلترها</h6>
+                        </div>
+                    </div>
+                    <span class="sidebar-close-icon d-block d-md-none">
+                        <i class="feather icon-x"></i>
+                    </span>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="multi-range-price">
+                                <div class="multi-range-title pb-75">
+                                    <h6 class="filter-title mb-0">چند دامنه</h6>
+                                </div>
+                                <ul class="list-unstyled price-range" id="price-range">
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="price-range" checked value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">همه</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="price-range" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50"> &lt;=$10</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="price-range" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">100,000 - 1,000,000 ريال</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="price-range" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">1,000,000 - 5,000,000 ريال</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="price-range" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">&gt;= $500</span>
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- /Price Filter -->
+                            <hr>
+                            <!-- /Price Slider -->
+                            <div class="price-slider">
+                                <div class="price-slider-title mt-1">
+                                    <h6 class="filter-title mb-0">اسلایدر</h6>
+                                </div>
+                                <div class="price-slider">
+                                    <div class="price_slider_amount mb-2">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="slider-sm my-1 range-slider" id="price-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Price Range -->
+                            <hr>
+                            <!-- Categories Starts -->
+                            <div id="product-categories">
+                                <div class="product-category-title">
+                                    <h6 class="filter-title mb-1">دسته بندی ها</h6>
+                                </div>
+                                <ul class="list-unstyled categories-list">
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false" checked>
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">برنامه ها</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50"> صوت</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">دوربین و دوربین فیلمبرداری</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">اتومبیل برقی-GPS</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">تلفن همراه</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">کامپیوتر ها و تبلت ها</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50"> بهداشت ، تناسب اندام و زیبایی</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">مناسب برای دفاتر و مدارس</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50">تلویزیون و سینمای خانگی</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                            <input type="radio" name="category-filter" value="false">
+                                            <span class="vs-radio">
+                                                <span class="vs-radio--border"></span>
+                                                <span class="vs-radio--circle"></span>
+                                            </span>
+                                            <span class="ml-50"> بازی های ویدیویی</span>
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- Categories Ends -->
+                            <hr>
+                            <!-- Brands -->
+                            <div class="brands">
+                                <div class="brand-title mt-1 pb-1">
+                                    <h6 class="filter-title mb-0">مارک ها</h6>
+                                </div>
+                                <div class="brand-list" id="brands">
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="">Insigniaâ„¢</span>
+                                            </span>
+                                            <span>746</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class=""> Samsung</span>
+                                            </span>
+                                            <span>633</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class=""> Metra</span>
+                                            </span>
+                                            <span>591</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="">HP</span>
+                                            </span>
+                                            <span>530</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="">Apple</span>
+                                            </span>
+                                            <span>442</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="">GE</span>
+                                            </span>
+                                            <span>394</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="">Sony</span>
+                                            </span>
+                                            <span>350</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="">Incipio</span>
+                                            </span>
+                                            <span>320</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="">KitchenAid</span>
+                                            </span>
+                                            <span>318</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                                <input type="checkbox" value="false">
+                                                <span class="vs-checkbox">
+                                                    <span class="vs-checkbox--check">
+                                                        <i class="vs-icon feather icon-check"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="">Whirlpool</span>
+                                            </span>
+                                            <span>298</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /Brand -->
+                            <hr>
+                            <!-- Rating section starts -->
+                            <div id="ratings">
+                                <div class="ratings-title mt-1 pb-75">
+                                    <h6 class="filter-title mb-0">رتبه</h6>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <ul class="unstyled-list list-inline ratings-list mb-0">
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li>و بیشتر</li>
+                                    </ul>
+                                    <div class="stars-received">(160)</div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <ul class="unstyled-list list-inline ratings-list mb-0">
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li>و بیشتر</li>
+                                    </ul>
+                                    <div class="stars-received">(176)</div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <ul class="unstyled-list list-inline ratings-list mb-0">
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li>و بیشتر</li>
+                                    </ul>
+                                    <div class="stars-received">(291)</div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <ul class="unstyled-list list-inline ratings-list mb-0 ">
+                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li>و بیشتر</li>
+                                    </ul>
+                                    <div class="stars-received">(190)</div>
+                                </div>
+                            </div>
+                            <!-- Rating section Ends -->
+                            <hr>
+                            <!-- Clear Filters Starts -->
+                            <div id="clear-filters">
+                                <button class="btn btn-block btn-primary">پاک کردن فیلترها</button>
+                            </div>
+                            <!-- Clear Filters Ends -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Ecommerce Sidebar Ends -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section JsVendor {
+    <script src="~/app-assets/vendors/js/ui/prism.min.js"></script>
+    <script src="~/app-assets/vendors/js/extensions/wNumb.js"></script>
+    <script src="~/app-assets/vendors/js/extensions/nouislider.min.js"></script>
+    <script src="~/app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+
+}
+@section JsPage {
+    <script src="~/app-assets/js/scripts/pages/app-ecommerce-shop.min.js"></script>
+}
+
+<body/>
