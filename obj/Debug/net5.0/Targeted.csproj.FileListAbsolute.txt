@@ -202,3 +202,4 @@ D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_HeaderPartial.cshtml
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_MenuPartial.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_CustomizerPartial.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_footerPartial.cshtml.g.cs
+D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs

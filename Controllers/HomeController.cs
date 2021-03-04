@@ -27,6 +27,10 @@ namespace Targeted.Controllers
         {
             return View();
         }
+        public IActionResult About()
+        {
+            return View();
+        }
         public IActionResult Target()
         {
             return View();
