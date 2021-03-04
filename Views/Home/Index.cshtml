@@ -1,11 +1,18 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@section JsHead {
+    <script>
+        $(document).ready(function () {
+            //class
+            $("body").addClass('2-columnsn');
 
-@*<div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    </div>*@
+            //attr
+            $("body").attr('data-col', '2-columns');
+        });
+    </script>
+
+}
 
 @section CssVendor {
     <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/vendors-rtl.min.css">

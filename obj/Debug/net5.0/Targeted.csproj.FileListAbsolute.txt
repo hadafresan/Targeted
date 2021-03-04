@@ -197,3 +197,8 @@ D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationSc
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
 D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Home\Target.cshtml.g.cs
+D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Home\Test.cshtml.g.cs
+D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_HeaderPartial.cshtml.g.cs
+D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_MenuPartial.cshtml.g.cs
+D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_CustomizerPartial.cshtml.g.cs
+D:\HadafResan\Targeted\obj\Debug\net5.0\Razor\Views\Shared\_footerPartial.cshtml.g.cs
